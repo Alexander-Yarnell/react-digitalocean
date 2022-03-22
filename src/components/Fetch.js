@@ -25,13 +25,16 @@ function Fetch(props) {
       return (
         <div>
           {state.data.map((book) => {
+            const number = book.id -1;
+    console.log(state.data[number].attributes.cover.data.attributes.url);
             return (
               <Card
+                url={url}
                 key={book.id}
-                title={book.attributes.Title}
-                author={book.attributes.Author}
+                title={book.attributes.title}
+                author={book.attributes.author}
                 img={
-                  state.data[book.id - 1].attributes.Cover.data.attributes.url
+                  state.data[book.id -1].attributes.cover.data.attributes.url
                 }
               />
             );

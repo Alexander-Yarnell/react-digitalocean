@@ -6,7 +6,7 @@ import Fetch from "./components/Fetch";
 function App() {
   return (
     <div className="App">
-      <Fetch url="http://localhost:1337/api/books?populate=*" />
+      <Fetch url="https://strapi-digitalocean-2-mawnc.ondigitalocean.app/api/books?populate=*" />
     </div>
   );
 }

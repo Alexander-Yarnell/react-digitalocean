@@ -6,7 +6,7 @@ function Card(props) {
       <div className="card" style={{ width: "18rem" }}>
         <img
           style={{ width: "18rem" }}
-          src={"http://localhost:1337" + props.img}
+          src={"https://strapi-digitalocean-2-mawnc.ondigitalocean.app" + props.img}
           className="card-img-top"
           alt="Sorry, this image failed to load."
         />
